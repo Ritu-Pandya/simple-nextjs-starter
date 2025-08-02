@@ -26,7 +26,7 @@ pipeline {
 
         stage('Deploy to Vercel') {
             steps {
-                withCredentials([string(credentialsId: 'vercel-token', variable: 'VERCEL_TOKEN')]) {
+                withCredentials([string(credentialsId: 'myToken', variable: 'VERCEL_TOKEN')]) {
                     bat '''
                         npm install -g vercel
                         vercel --token=%VERCEL_TOKEN% --prod --confirm
