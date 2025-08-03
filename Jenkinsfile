@@ -6,7 +6,7 @@ pipeline {
     }
     
     tools {
-        nodejs 'Node22'  // Updated to use Node.js 22
+        nodejs 'Node 22'  // Updated to use Node.js 22
     }
 
     stages {
