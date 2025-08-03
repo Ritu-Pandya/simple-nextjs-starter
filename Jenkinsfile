@@ -4,6 +4,10 @@ pipeline {
     environment {
         CI = 'false'
     }
+    
+    tools {
+        nodejs 'Node22'  // Updated to use Node.js 22
+    }
 
     stages {
         stage('Clone Repo') {
